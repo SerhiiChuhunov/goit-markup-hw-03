@@ -71,12 +71,29 @@ ul {
     color: var(--primary-white-color);
 }
 
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
+}
+
+.site-nav .item + .item {
+    margin-left: 50px;
 }
 
 .site-nav .link:hover,
@@ -92,6 +109,11 @@ ul {
     color: var(--accent-color);
 }
 
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+
 .contacts .link {
     font-weight: 500;
     font-size: 14px;
@@ -100,7 +122,12 @@ ul {
     color: var(--primary-text-color);
 }
 
+.contacts .item + .item {
+    margin-left: 50px;
+}
+
 .hero {
+    padding-bottom: 200px;
     text-align: center;
     background-color: var(--herofooter-bg-color);
 }
@@ -108,6 +135,7 @@ ul {
 .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
+    padding-top: 200px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -136,6 +164,20 @@ ul {
     background-color: var(--button-hover-color);
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.peculiarities {
+    display: flex;
+    width: 270;
+}
+
+.peculiarities .item + .item {
+    margin-left: 30px;
+}
+
 .peculiarities .title {
     margin-top: 0;
     margin-bottom: 10px;
@@ -152,6 +194,19 @@ ul {
     line-height: 1.71;
 }
 
+.image {
+    padding-top: 0;
+}
+
+.img {
+    display: flex;
+    width: 370;
+}
+
+.img .item + .item {
+    margin-left: 30px;
+}
+
 .section-title,
 .team-title {
     margin-top: 0;
@@ -162,8 +217,8 @@ ul {
     color: var(--title-text-color);
 }
 
-.team {
-background-color: var(--secondary-white-color);
+.section.team {    
+    background-color: var(--secondary-white-color); 
 }
 
 .work-list .title {
