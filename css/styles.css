@@ -65,6 +65,8 @@ ul {
 }
 
 .logo-white {
+    display: block;
+    margin-bottom: 20px;
     font-family: Raleway;
     font-size: 26px;
     line-height: 1.19;
@@ -124,6 +126,12 @@ ul {
 
 .contacts .item + .item {
     margin-left: 50px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .hero {
@@ -198,12 +206,12 @@ ul {
     padding-top: 0;
 }
 
-.img {
+.picture {
     display: flex;
     width: 370;
 }
 
-.img .item + .item {
+.picture .item + .item {
     margin-left: 30px;
 }
 
@@ -221,8 +229,25 @@ ul {
     background-color: var(--secondary-white-color); 
 }
 
-.work-list .title {
+.work-list {
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.work-list .item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
     margin-top: 30px;
+}
+
+.card-content {
+    padding: 30px;
+    text-align: center;
+}
+
+.work-list .title {
+    margin-top: 0;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -238,7 +263,13 @@ ul {
 }
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--herofooter-bg-color);
+}
+
+.address-nav .item+.item {
+    margin-top: 9px;
 }
 
 .address-nav .link-nav {
@@ -256,6 +287,15 @@ ul {
 }
 
 /* Стили портфолио */
+
+.button-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.button-menu .item + .item {
+    margin-left: 8px;
+}
 
 .button-potrf {
     margin-top: 0;
@@ -281,7 +321,7 @@ ul {
 }
 
 .content .title {
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 4px;
     font-size: 18px;
     line-height: 2;
@@ -295,3 +335,22 @@ ul {
     font-size: 16px;
     line-height: 1.88;
 }
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.content .item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.card-context {
+    padding: 20px;
+}
+
+
